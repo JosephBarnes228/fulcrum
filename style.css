@@ -68,6 +68,7 @@ body {
     color: white;
     text-transform: uppercase;
     margin-bottom: 0;
+    word-spacing: 20px;
 }
 
 .text {
@@ -182,6 +183,7 @@ body {
     margin: 128px 0;
     padding-inline: 10%;
     gap: 24px;
+    position: relative;
 }
 
 .reviews h3 {
@@ -194,6 +196,22 @@ body {
 .reviews .blur {
     right: 10%;
     transform: translate(80px, -80px);
+}
+
+.reviews .quotation-mark {
+    position: absolute;
+    width: 100px;
+    left: 10%;
+}
+
+.reviews .quotation-mark.end {
+    left: 30%;
+    bottom: 0;
+    rotate: 180deg;
+}
+
+.carousel-inner {
+    border-radius: 12px;
 }
 
 .carousel .item {
@@ -231,6 +249,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 120px;
+    padding-inline: 10%;
 }
 
 .connect h3 {
@@ -283,4 +302,79 @@ body {
     filter: blur(120px);
     width: 30rem;
     height: 30rem;
+}
+
+@media screen and (max-width: 1025px) {
+    .hero h2 {
+        font-size: 48px;
+    }
+
+    .clean {
+        width: 234px;
+        height: 50px;
+    }
+
+    .reviews .quotation-mark {
+        width: 70px;
+    }
+
+    .reviews .quotation-mark.start {
+        transform: translate(-20px, -36px);
+    }
+
+    .reviews .quotation-mark.end {
+        top: 100px;
+        right: 8%;
+        left: auto;
+    }
+
+    @keyframes clean-swipe {
+        from {width: 0;}
+        to {width: 234px;}
+    }
+    
+    .lockup h4 {
+        font-size: 24px;
+    }
+
+    .reviews {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel .item {
+        height: 500px;
+    }
+
+    .connect form {
+        width: 100%;
+    }
+
+    .services h3,
+    .connect h3,
+    .reviews h3 {
+        font-size: 32px;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reviews .blur {
+        transform: none;
+    }
+
+    .carousel .item img {
+        width: 300px;
+    }
+
+    .reviews .quotation-mark {
+        display: none;
+    }
 }
