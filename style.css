@@ -378,4 +378,21 @@ body {
     .reviews .quotation-mark {
         display: none;
     }
+
+    .hero h2 {
+        line-height: 50px;
+    }
+
+    .hero .clean {
+        transform: unset;
+    }
+
+    .hero .text {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .hero br {
+        display: none;
+    }
 }
