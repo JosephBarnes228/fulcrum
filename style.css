@@ -54,7 +54,7 @@ body {
 
 .hero {
     background: url(./images/hero.png) no-repeat 0 0 / cover;
-    height: 64vh;
+    height: 560px;
     padding-inline: 10%;
     align-items: end;
     display: flex;
@@ -349,7 +349,7 @@ body {
     }
 
     .carousel .item {
-        height: 500px;
+        height: 530px;
     }
 
     .connect form {
