@@ -11,6 +11,7 @@
 html, body {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -93,7 +94,7 @@ body {
     to {width: 334px;}
 }
 
-.hero p {
+.hero h1 {
     font: 400 24px 'Noto Sans';
     color: white;
     margin: 24px 0;
