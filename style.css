@@ -83,7 +83,7 @@ body {
     width: 334px;
     left: calc(10% - 27px);
     height: 80px;
-    margin-top: 10px;
+    transform: translateY(10px);
     z-index: 0;
     clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
     animation: clean-swipe .75s ease;
