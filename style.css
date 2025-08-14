@@ -15,7 +15,7 @@ html, body {
 }
 
 body {
-    background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1)) !important;
+    background-color: rgb(24, 24, 24) !important;
     display: flex;
     flex-direction: column;
 }
@@ -26,10 +26,10 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
-    background: rgb(15 23 42 / var(--tw-bg-opacity, 1));;
+    background: rgb(24, 24, 24);
     display: flex;
     flex-direction: row;
-    border-bottom: 2px solid rgb(79 70 229);
+    border-bottom: 2px solid #cf0000;
 }
 
 .header .lockup img {
@@ -79,7 +79,7 @@ body {
 
 .clean {
     position: absolute;
-    background: rgb(79 70 229);
+    background: #cf0000;
     width: 334px;
     left: calc(10% - 27px);
     height: 80px;
@@ -105,11 +105,11 @@ body {
     color: white;
     border-radius: 8px;
     font: 400 18px 'Noto Sans';
-    background: rgb(79 70 229);
+    background: #cf0000;
 }
 
 .button:hover {
-    background: rgb(90, 84, 214);
+    background: #b90000;
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -117,18 +117,24 @@ body {
 
 .button:focus,
 .button:active {
-    background: rgb(114, 108, 230);
+    background: #aa0000;
     text-decoration: none;
     color: white;
     cursor: pointer;
 }
 
 /* Services section */
-.services {
+.services,
+.transformation {
     padding-inline: 10%;
 }
 
-.services h3 {
+.transformation {
+    margin-bottom: 80px;
+}
+
+.services h3,
+.transformation h3 {
     font: 400 48px 'Noto Sans';
     color: white;
     margin-block: 64px 24px;
@@ -140,7 +146,7 @@ body {
     transform: translate(-80px, -80px);
     height: 18rem;
     width: 18rem;
-    background: #4a61dd;
+    background: #cf0000b3;
     opacity: 0.6;
     filter: blur(80px);
     z-index: -1;
@@ -150,6 +156,11 @@ body {
     display: grid;
     grid: auto-flow / 1fr 1fr 1fr;
     gap: 24px;
+}
+
+.services .card img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 
 .card {
@@ -181,7 +192,7 @@ body {
 .reviews {
     display: grid;
     grid: auto-flow / 2fr 3fr;
-    margin: 128px 0;
+    margin: 120px 0 80px 0;
     padding-inline: 10%;
     gap: 24px;
     position: relative;
@@ -258,7 +269,8 @@ body {
     color: white;
 }
 
-.connect h3 + p {
+.connect h3 + p,
+.transformation h3 + p {
     font: 400 20px 'Noto Sans';
     color: white;
     margin-bottom: 24px;
@@ -358,7 +370,8 @@ body {
 
     .services h3,
     .connect h3,
-    .reviews h3 {
+    .reviews h3,
+    .transformation h3 {
         font-size: 32px;
     }
 
